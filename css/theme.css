@@ -29,9 +29,6 @@
     --nav-link: var(--clr-light-green);
     --theme-icon: var(--clr-lightest);
     --theme-txt: var(--clr-lightest);
-    /* --item-shadow: rgba(0, 0, 0, 0.5);
-    --item-bg: var(--clr-grey-green);
-    --item-repo-link: var(--clr-light-green); */
 }
 
 .light-theme {
@@ -44,7 +41,4 @@
     --nav-link: var(--clr-darkest);
     --theme-icon: var(--clr-orange);
     --theme-txt: var(--clr-darkest);
-    /* --item-shadow: rgba(0, 0, 0, 0.3);
-    --item-bg: var(--clr-lightest);
-    --item-repo-link: var(--clr-green); */
 }
