@@ -108,8 +108,21 @@ button {
     grid-template-rows: auto 1fr auto;
 }
 
+.page-header,
+.page-footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-txt);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-style: solid;
+}
+
 .page-header {
     padding: 3.2rem 0;
+    border-bottom-color: var(--header-footer-border);
+    border-width: 0 0 0.5rem 0;
     @media screen and (width < 360px) {
         padding-inline: 1rem;
         padding-top: 5rem;
@@ -135,23 +148,9 @@ button {
     }
 }
 
-.page-footer {
-    padding: 3.2rem 0;
-}
-
-.page-header,
-.page-footer {
-    background-color: var(--clr-darkest);
-    color: var(--clr-lightest);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 .page-header a,
 .page-footer a {
-    color: var(--clr-lightest);
+    color: var(--header-footer-txt);
     text-decoration: none;
 }
 
@@ -162,6 +161,10 @@ button {
 }
 
 .page-footer {
+    padding: 3.2rem 0;
+    border-top-color: var(--header-footer-border);
+    border-width: 0.5rem 0 0 0;
+
     & a:hover {
         text-decoration: underline;
     }
@@ -176,7 +179,7 @@ button {
 }
 
 .icon-logo {
-    fill: var(--clr-lightest);
+    fill: var(--header-footer-txt);
     width: 3.6rem;
     height: 3.6rem;
     margin: var(--horz-center);

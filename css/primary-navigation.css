@@ -32,20 +32,20 @@
     }
     & a {
         text-decoration: none;
-        color: var(--clr-lightest);
+        color: var(--nav-link);
         border-bottom: 5px solid transparent;
         padding-block-end: 0.5rem;
         margin-bottom: 1rem;
 
         &:hover {
-            border-bottom-color: var(--clr-lightest);
+            border-bottom-color: var(--nav-link);
         }
 
         &.current-page,
         &.current-page:hover {
             text-decoration: none;
             cursor: default;
-            border-bottom-color: var(--clr-lightest);
+            border-bottom-color: var(--nav-link);
             font-weight: 600;
         }
     }
