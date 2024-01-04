@@ -1,5 +1,5 @@
 :root {
-    --animation-timing: 200ms;
+    --animation-timing: 250ms;
 }
 
 .primary-navigation {
@@ -13,9 +13,23 @@
     & nav {
         width: fit-content;
         margin: var(--horz-center);
+
         @media screen and (width <= 768px) {
-            flex-direction: column;
-            margin: 0 auto 0 2rem;
+            &.menu-hidden,
+            &.menu-visible {
+                margin: 0 auto 0 2rem;
+                display: var(--grid);
+                grid-template-rows: 0fr;
+                transition: grid-template-rows var(--animation-timing) ease-in;
+
+                & > ul {
+                    overflow: hidden;
+                }
+            }
+
+            &.menu-visible {
+                grid-template-rows: 1fr;
+            }
         }
     }
 
@@ -115,25 +129,5 @@
         &[aria-expanded="true"] .middle {
             opacity: 0;
         }
-    }
-
-    .menu-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        overflow: clip;
-        clip-path: inset(0);
-        border: 0;
-        opacity: 0;
-    }
-    .menu-visible {
-        position: static;
-        width: auto;
-        height: auto;
-        margin: inherit;
-        overflow: visible;
-        clip-path: none;
-        transition: opacity var(--animation-timing) var(--animation-timing) ease-in;
     }
 }
