@@ -81,7 +81,7 @@ Base the readme on the following HTML, CSS and JavaScript:
 
     & nav {
         width: fit-content;
-        margin: var(--horz-center);
+        margin: 0 auto;
         @media screen and (width <= 768px) {
             flex-direction: column;
             margin: 0 auto 0 2rem;
@@ -91,7 +91,7 @@ Base the readme on the following HTML, CSS and JavaScript:
     & ul {
         list-style: none;
         padding-left: 0;
-        display: var(--flex);
+        display: flex;
         gap: 2rem;
         align-items: baseline;
 
@@ -132,10 +132,10 @@ Base the readme on the following HTML, CSS and JavaScript:
 @media screen and (width <= 768px) {
     .hamburger-button-wrapper {
         width: fit-content;
-        display: var(--flex);
+        display: flex;
         gap: 1rem;
         align-items: center;
-        margin: var(--horz-center);
+        margin: 0 auto;
         position: absolute;
         top: -1.2rem;
         right: 2rem;
