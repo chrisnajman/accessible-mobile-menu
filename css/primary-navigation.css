@@ -45,21 +45,23 @@
             flex-direction: column;
         }
     }
-    & a {
-        text-decoration: none;
+    & span {
+        /* text-decoration: none; */
         color: var(--nav-link);
         border-bottom: 5px solid transparent;
         padding-block-end: 0.5rem;
         margin-bottom: 1rem;
+        display: block;
+        cursor: pointer;
 
         &:hover {
             border-bottom-color: var(--nav-link);
         }
 
-        &.current-page,
-        &.current-page:hover {
-            text-decoration: none;
-            cursor: default;
+        &.active,
+        &.active:hover {
+            /* text-decoration: none; */
+            pointer-events: none;
             border-bottom-color: var(--nav-link);
             font-weight: 600;
         }

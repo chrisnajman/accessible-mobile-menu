@@ -48,13 +48,14 @@
                     </button>
                 </div>
 
-                <nav aria-label="main menu" id="site-navigation" class="menu-hidden">
+                <nav id="site-navigation" class="menu-hidden">
+                    <p class="visually-hidden">Faux nav for demo purposes only.</p>
                     <ul>
-                        <li><a class="current-page" href="./">Home</a></li>
-                        <li><a href="./">Projects</a></li>
-                        <li><a href="./">Blog</a></li>
-                        <li><a href="./">About</a></li>
-                        <li><a href="./">Contact</a></li>
+                        <li><span class="active">Home</span></li>
+                        <li><span>Projects</span></li>
+                        <li><span>Blog</span></li>
+                        <li><span>About</span></li>
+                        <li><span>Contact</span></li>
                     </ul>
                 </nav>
             </div>
@@ -75,6 +76,20 @@
             </ul>
         </footer>
     </div>
+
+    <script>
+
+        const pageLinks = document.querySelectorAll(".page-link")
+
+        pageLinks.forEach(link => {
+            link.classList.remove("current-page")
+            link.addEventListener("click", (e) => {
+
+                e.target.classList.toggle("current-page")
+            })
+        })
+
+    </script>
 </body>
 
 </html>
