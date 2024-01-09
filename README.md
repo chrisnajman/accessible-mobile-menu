@@ -4,7 +4,7 @@ A responsive mobile menu that prioritizes accessibility features for screen read
 
 ## Description
 
-The mobile menu is designed to be responsive, and is visible on screens less than 768px wide. It is initially hidden and appears upon clicking the hamburger menu button.
+The mobile menu is designed to be responsive, and is visible on screens less than 768px wide. It is initially hidden and appears upon clicking the hamburger menu button. Clicking on a menu item will close the menu.
 
 ## Accessibility Features
 
