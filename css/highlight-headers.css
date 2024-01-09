@@ -1,0 +1,17 @@
+.article h3 {
+    padding-block-end: 0.5rem;
+    border-bottom: 0.5rem solid transparent;
+
+    &.highlight {
+        animation: highlight 1s linear;
+    }
+}
+
+@keyframes highlight {
+    0% {
+        border-bottom-color: transparent;
+    }
+    100% {
+        border-bottom-color: var(--body-txt);
+    }
+}

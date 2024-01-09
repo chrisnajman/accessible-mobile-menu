@@ -4,12 +4,13 @@
     --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
     --clr-light-blue: rgb(135, 206, 235);
-    --clr-blue: rgb(0, 117, 255);
+    --clr-blue: #0075ff;
     --clr-lightest: white;
     --clr-mid: #555;
     --clr-light-green: rgb(239, 250, 250);
     --clr-green: rgb(4, 167, 167);
     --clr-grey-green: rgb(44, 58, 58);
+    --clr-dark-green: rgb(3, 94, 94);
     --clr-dark: rgb(30, 39, 39);
     --clr-darker: #222;
     --clr-darkest: black;
@@ -21,14 +22,15 @@
 
     --highlight: var(--clr-light-blue);
     --timeline: var(--clr-red-tile);
+    --page-header-shadow: rgba(0, 0, 0, 0.28);
 
     /* Dark theme (default) */
 
     --body-bg: var(--clr-dark);
     --body-txt: var(--clr-light-green);
-    --header-footer-bg: var(--clr-darkest);
-    --header-footer-txt: var(--clr-light-green);
-    --header-footer-border: var(--clr-transparent);
+    --header-nav-footer-bg: var(--clr-darkest);
+    --header-nav-footer-txt: var(--clr-light-green);
+    --nav-footer-border: var(--clr-transparent);
     --hamburger-line-colour: var(--clr-light-green);
     --nav-link: var(--clr-light-green);
     --theme-icon: var(--clr-lightest);
@@ -38,11 +40,11 @@
 .light-theme {
     --body-bg: var(--clr-light-green);
     --body-txt: var(--clr-darkest);
-    --header-footer-bg: var(--clr-lightest);
-    --header-footer-txt: var(--clr-darkest);
-    --header-footer-border: var(--clr-green);
+    --header-nav-footer-bg: var(--clr-lightest);
+    --header-nav-footer-txt: var(--clr-darkest);
+    --nav-footer-border: var(--clr-green);
     --hamburger-line-colour: var(--clr-darkest);
-    --nav-link: var(--clr-darkest);
+    --nav-link: var(--clr-dark);
     --theme-icon: var(--clr-orange);
     --theme-txt: var(--clr-darkest);
 }

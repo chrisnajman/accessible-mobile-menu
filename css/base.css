@@ -96,24 +96,21 @@ button {
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 .page-header,
 .page-footer {
-    background-color: var(--header-footer-bg);
-    color: var(--header-footer-txt);
+    background-color: var(--header-nav-footer-bg);
+    color: var(--header-nav-footer-txt);
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border-style: solid;
 }
 
 .page-header {
     padding: 3.2rem 0;
-    border-bottom-color: var(--header-footer-border);
-    border-width: 0 0 0.5rem 0;
     @media screen and (width < 360px) {
         padding-inline: 1rem;
         padding-top: 5rem;
@@ -128,26 +125,13 @@ button {
 }
 
 .main {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 5rem 2rem;
-    display: flex;
-    flex-direction: column;
-
-    & h2 {
-        text-align: left;
-        line-height: normal;
-        margin-bottom: 0;
-    }
-
-    & p {
-        margin-bottom: 2.5rem;
-    }
+    overflow: hidden;
+    padding: 0 1.6rem 0;
 }
 
 .page-header a,
 .page-footer a {
-    color: var(--header-footer-txt);
+    color: var(--header-nav-footer-txt);
     text-decoration: none;
 }
 
@@ -159,7 +143,8 @@ button {
 
 .page-footer {
     padding: 3.2rem 0;
-    border-top-color: var(--header-footer-border);
+    border-style: solid;
+    border-top-color: var(--nav-footer-border);
     border-width: 0.5rem 0 0 0;
 
     & a:hover {
@@ -176,16 +161,17 @@ button {
 }
 
 .icon-logo {
-    fill: var(--header-footer-txt);
+    fill: var(--header-nav-footer-txt);
     width: 3.6rem;
     height: 3.6rem;
     margin: 0 auto;
 }
 
 .article {
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
-    padding: 3rem 0 8rem;
+
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -193,11 +179,20 @@ button {
     & h2 {
         text-align: center;
         margin: 1rem 0;
-        text-transform: capitalize;
     }
 
-    & p:first-of-type {
-        max-width: 60ch;
+    & h3 {
+        text-align: left;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    & p {
+        font-family: var(--font-serif);
+
+        &:first-of-type {
+            max-width: 60ch;
+        }
     }
 
     & section {

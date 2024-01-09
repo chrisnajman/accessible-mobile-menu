@@ -1,10 +1,7 @@
-export default function btnHamburger() {
-  const hamburgerButton = document.getElementById("hamburger-button")
-  const btnTxt = document.getElementById("btn-txt")
-  const primaryNavigation = document.getElementById("primary-navigation")
-  const siteNavigation = document.getElementById("site-navigation")
+import { hamburgerButton, btnTxt, siteNavigation } from "./globals.js"
 
-  hamburgerButton.addEventListener("click", (e) => {
+export default function btnHamburger() {
+  hamburgerButton.addEventListener("click", () => {
     const isExpanded = hamburgerButton.getAttribute("aria-expanded")
     if (isExpanded === "false") {
       hamburgerButton.setAttribute("aria-expanded", "true")
@@ -15,6 +12,5 @@ export default function btnHamburger() {
     }
     siteNavigation.classList.toggle("menu-hidden")
     siteNavigation.classList.toggle("menu-visible")
-    primaryNavigation.classList.toggle("padding")
   })
 }

@@ -35,40 +35,331 @@
             </svg>
             <h1>Accessible Mobile Menu</h1>
             <p>To interact with the mobile menu, narrow the window width to 768px or less.</p>
-            <div id="primary-navigation" class="primary-navigation padding">
-                <div class="hamburger-button-wrapper">
-                    <h2>Menu</h2>
-                    <button class="hamburger-button" id="hamburger-button" aria-controls="site-navigation"
-                        aria-expanded="false">
-                        <span id="btn-txt" class="visually-hidden">Expand menu</span>
-                        <svg class="lines" viewBox="0 0 100 100">
-                            <rect class="line top" y="28" x="10" rx="5"></rect>
-                            <rect class="line middle" y="47" x="10" rx="5"></rect>
-                            <rect class="line bottom" y="68" x="10" rx="5"></rect>
-                        </svg>
-                    </button>
-                </div>
-
-                <nav id="site-navigation" class="menu-hidden">
-                    <p class="visually-hidden">Faux nav for demo purposes only.</p>
-                    <ul>
-                        <li><span class="active">Home</span></li>
-                        <li><span>Projects</span></li>
-                        <li><span>Blog</span></li>
-                        <li><span>About</span></li>
-                        <li><span>Contact</span></li>
-                    </ul>
-                </nav>
-            </div>
-
         </header>
-        <main id="main-content" class="main">
-            <p>Designed with accessibility in mind, this menu emphasizes features for screen reader users and
-                individuals reliant on keyboard navigation. Leveraging ARIA attributes, it ensures screen reader
-                compatibility and enables smooth interaction through keyboard controls.</p>
-            <p>The hamburger menu button, when clicked, reveals the menu. Additionally, keyboard users can easily
-                navigate to the button and toggle the menu visibility using the 'enter' key for enhanced accessibility.
-            </p>
+        <div id="primary-navigation" class="primary-navigation padding">
+            <div class="hamburger-button-wrapper">
+                <h2>Menu</h2>
+                <button class="hamburger-button" id="hamburger-button" aria-controls="site-navigation"
+                    aria-expanded="false">
+                    <span id="btn-txt" class="visually-hidden">Expand menu</span>
+                    <svg class="lines" viewBox="0 0 100 100">
+                        <rect class="line top" y="28" x="10" rx="5"></rect>
+                        <rect class="line middle" y="47" x="10" rx="5"></rect>
+                        <rect class="line bottom" y="68" x="10" rx="5"></rect>
+                    </svg>
+                </button>
+            </div>
+            <nav id="site-navigation" class="menu-hidden">
+                <ul>
+                    <li><a class="nav-link" class="nav-link" href="#intro">Intro</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <article class="article" id="main-content" tabindex="0">
+                <h2 class="article-header">Article</h2>
+                <section>
+                    <h3 id="intro">Intro</h3>
+                    <p>The menu emphasizes features for screen reader users and
+                        individuals reliant on keyboard navigation. Leveraging ARIA attributes, it ensures screen reader
+                        compatibility and enables smooth interaction through keyboard controls.</p>
+                    <p>The hamburger menu button, when clicked, reveals the menu. Additionally, keyboard users can
+                        easily
+                        navigate to the button and toggle the menu visibility using the 'enter' key for enhanced
+                        accessibility. Clicking on a menu item will close the menu.
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto iste eveniet dolore ipsum
+                        saepe voluptatum inventore, ab perferendis, doloribus amet hic! Soluta vero veritatis corporis
+                        aliquam reiciendis dignissimos amet aperiam necessitatibus, iure sunt nemo qui adipisci
+                        nesciunt, in
+                        assumenda voluptatum! Eveniet molestiae quisquam ex nihil qui dignissimos exercitationem sunt
+                        cumque, illo dolorum culpa rem quo, laborum sapiente optio minus mollitia? Porro ut fuga dolorum
+                        ipsa, sapiente voluptatem, sit praesentium earum ea temporibus nostrum. Harum nihil nemo
+                        recusandae
+                        consectetur dolorem impedit culpa fuga rem voluptatum modi sit tempora, repellendus est nisi
+                        neque
+                        dolorum repudiandae enim reiciendis nesciunt excepturi vitae doloribus!</p>
+
+
+                    <p>Sapiente minima eius laborum, fuga velit officiis eaque. Quos earum officia minima delectus eum
+                        est
+                        facilis. Error, doloremque. Maiores odio nam qui. Dolorem error minima animi voluptate cum quasi
+                        pariatur dicta at cumque deleniti totam nisi, aperiam est distinctio dolor ea, vero rerum
+                        maiores
+                        eos similique. Beatae nulla magnam debitis ipsa possimus repellat officia aliquam maxime dolore
+                        earum nisi eos placeat asperiores minima expedita quam laboriosam voluptatum, nam rem ut!
+                        Tenetur
+                        recusandae aliquam totam, quis deleniti numquam laborum quisquam omnis? Beatae laboriosam autem
+                        doloremque aspernatur libero dolorem quaerat accusantium voluptatibus voluptatum itaque, a
+                        impedit
+                        et doloribus iure adipisci eos cumque laudantium architecto? Eum numquam voluptates iste
+                        doloremque
+                        vel quis, assumenda facere mollitia perferendis esse labore illum consequuntur atque non!
+                        Quisquam
+                        fugiat iste vero quia, qui possimus alias aperiam perferendis sed tempore, ipsam repellat soluta
+                        ex
+                        quasi sunt culpa voluptatem corporis numquam! Sapiente reiciendis quibusdam dolore deleniti quas
+                        perspiciatis cum molestias.</p>
+                </section>
+                <section>
+                    <h3 id="about">About</h3>
+                    <p>Blanditiis, voluptatem? Sequi temporibus molestiae impedit quis natus expedita atque dolorem quia
+                        iusto, earum distinctio sit, aliquam ullam libero, voluptatem ipsum nobis sint cumque. Ut
+                        voluptas
+                        delectus quaerat sed qui, corporis quas voluptatem corrupti nemo sint vero eos optio praesentium
+                        unde vel sunt placeat earum esse. Error animi officia cumque. Soluta, laboriosam quas. Officia
+                        rem
+                        officiis iste quia doloribus, assumenda dignissimos, porro facere quidem aut delectus quod
+                        deserunt
+                        perferendis et aperiam itaque doloremque culpa dicta ut consequatur ipsum est eum fugiat
+                        laudantium?
+                        Quibusdam excepturi illo praesentium provident et, ex commodi ducimus porro optio dignissimos
+                        sint
+                        eum molestias ullam quae cupiditate. Quia, cupiditate maxime facilis saepe voluptatem atque
+                        sapiente? Vitae illo doloribus animi, voluptate tempore quae obcaecati qui. Doloribus inventore
+                        nulla eius, tenetur ipsum dolorem deleniti obcaecati a repellat cupiditate soluta ea maiores
+                        odio
+                        eos, nesciunt facere molestias impedit atque laborum cumque asperiores saepe reiciendis.
+                        Mollitia
+                        vel totam qui eius at.</p>
+                    <p>Sint quam harum dolores recusandae hic reprehenderit aliquid inventore provident alias modi.
+                        Voluptas, maiores veritatis. Asperiores unde assumenda, debitis fuga vitae recusandae tenetur
+                        inventore maiores quas sit iusto porro, quasi cumque maxime temporibus, voluptate labore
+                        cupiditate
+                        accusamus velit cum minus ad. Doloremque facere quis eum natus, eos aliquid corporis sequi
+                        obcaecati
+                        blanditiis enim ullam, dolorem nostrum impedit beatae tempora quaerat deserunt, debitis
+                        asperiores.
+                        Suscipit iusto similique est. Ad, voluptatum? Odio ut quo aliquam aspernatur facere dolorum
+                        nostrum
+                        sed id nihil laudantium. Nemo voluptates iste praesentium laborum? Explicabo voluptas laborum
+                        autem,
+                        animi alias unde ut temporibus, tenetur quae culpa repellendus, esse odio expedita molestias
+                        architecto nemo natus dolorem aut distinctio totam quidem provident error! Placeat doloribus
+                        corrupti, consequatur delectus sapiente quod voluptatem deleniti quas cupiditate rem magnam
+                        architecto alias omnis rerum dolore, similique esse? Totam iure molestias magnam adipisci
+                        similique
+                        maiores, itaque rerum maxime omnis quidem earum. Nam deserunt inventore cupiditate!</p>
+                </section>
+                <section>
+                    <h3 id="projects">Projects</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto iste eveniet dolore ipsum
+                        saepe voluptatum inventore, ab perferendis, doloribus amet hic! Soluta vero veritatis corporis
+                        aliquam reiciendis dignissimos amet aperiam necessitatibus, iure sunt nemo qui adipisci
+                        nesciunt, in
+                        assumenda voluptatum! Eveniet molestiae quisquam ex nihil qui dignissimos exercitationem sunt
+                        cumque, illo dolorum culpa rem quo, laborum sapiente optio minus mollitia? Porro ut fuga dolorum
+                        ipsa, sapiente voluptatem, sit praesentium earum ea temporibus nostrum. Harum nihil nemo
+                        recusandae
+                        consectetur dolorem impedit culpa fuga rem voluptatum modi sit tempora, repellendus est nisi
+                        neque
+                        dolorum repudiandae enim reiciendis nesciunt excepturi vitae doloribus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam, ab aliquam obcaecati nulla
+                        consequuntur voluptatibus nam corporis iste itaque, saepe accusantium aliquid ducimus minus,
+                        alias
+                        quidem voluptatem! Eaque reprehenderit deserunt laborum minima porro, deleniti aspernatur vitae
+                        repellendus quas nisi rerum culpa veritatis a nostrum fuga recusandae ab repellat nulla facilis
+                        excepturi. Laborum, architecto corporis delectus ex alias omnis nulla dolorum quam amet ea
+                        itaque
+                        nemo incidunt, quasi sint numquam error. Nam neque corrupti ipsum quia nihil debitis eveniet
+                        dolor
+                        unde voluptas, amet fuga soluta in omnis expedita, minus dolorem non nobis minima saepe
+                        recusandae
+                        temporibus totam cupiditate tempora. Quasi repellendus magni nisi saepe eum optio corrupti
+                        maxime?
+                        Ullam eveniet dolorem libero illum, maiores minus magnam fugit soluta, dolore exercitationem quo
+                        iure aut cupiditate obcaecati ipsum eaque, quod quis sit voluptate vitae! Sint sequi ut
+                        recusandae
+                        laboriosam a voluptatum aut! Incidunt esse pariatur possimus illum alias dolore, omnis enim
+                        harum.
+                    </p>
+                    <p>Id nemo tempora consequuntur quibusdam distinctio reprehenderit, veritatis corporis natus aliquid
+                        excepturi quidem ex vero modi beatae iste voluptas nam pariatur rerum eligendi amet, iure
+                        debitis
+                        nesciunt perspiciatis? Fugit voluptatem itaque sint. Eos consequuntur totam voluptatum animi
+                        itaque
+                        modi sint aperiam temporibus cupiditate vitae, ipsam consequatur iusto possimus fuga eum
+                        incidunt?
+                        Cupiditate amet nulla optio, obcaecati error veniam expedita magnam commodi! Eveniet dicta
+                        doloribus
+                        sint necessitatibus veritatis beatae maiores nobis, fugit impedit, quibusdam quod deserunt
+                        corporis
+                        unde accusantium adipisci nostrum sed quis, odio numquam consequuntur at. Consequuntur ipsum
+                        doloremque provident quas nesciunt, tempore officiis aperiam numquam necessitatibus odio quaerat
+                        harum ab cupiditate! Aperiam nulla sunt numquam! Ex assumenda alias facilis ab iure facere
+                        tenetur
+                        odit consequuntur excepturi quis perspiciatis adipisci quisquam fugit consectetur dolor illo,
+                        modi
+                        laborum, sunt aperiam ipsa laudantium tempora. Aliquam dolor laborum voluptatibus ratione, eum
+                        nobis
+                        adipisci distinctio sed non obcaecati voluptas autem nam sunt? Debitis, modi.</p>
+                    <p>Perferendis magni commodi atque ex eum recusandae architecto quo voluptas magnam ad nemo vel
+                        repudiandae, consectetur libero doloremque quos dolorem quas earum culpa doloribus. Incidunt
+                        fugiat,
+                        quam accusantium odit velit veniam vel optio maxime architecto ab accusamus at placeat deserunt
+                        dolorum expedita libero nobis ipsa repudiandae corporis provident porro sequi, distinctio
+                        ratione.
+                        Quas unde labore doloribus nostrum dolorum quam ipsum illo, possimus commodi distinctio pariatur
+                        facilis adipisci consequuntur repellendus quaerat iste dolore? Perferendis soluta odit
+                        voluptate!
+                        Nobis id animi repudiandae unde natus. Officiis distinctio deserunt neque odio possimus maxime.
+                        Accusantium saepe atque ex odit ad ratione officia nostrum enim voluptatem! Itaque architecto
+                        sapiente eaque ipsam veniam! Tempora voluptate nulla aut, laudantium dolorum dolor, quasi nobis
+                        autem natus rerum maiores fugiat tenetur eaque ipsa praesentium maxime perferendis? Rerum at
+                        cumque,
+                        accusantium velit in ex placeat ducimus facilis quisquam totam. Laudantium quisquam dolorem
+                        facere
+                        explicabo repellendus alias molestiae praesentium tempore, harum ab?</p>
+                    <p>Rerum beatae at modi ratione corrupti consequuntur, repudiandae sunt perspiciatis reprehenderit
+                        dolore saepe minus culpa dicta illo? Eveniet minima incidunt cum accusamus facilis. Quos, eius
+                        vel
+                        optio earum, commodi esse voluptatibus consequuntur qui quas quaerat eum dicta ut distinctio,
+                        nisi
+                        atque aspernatur totam est. Quis facilis eos tempora consequuntur obcaecati fugit ea corporis ad
+                        voluptatem, rem qui nisi veritatis. Impedit, itaque ab dolore atque nobis obcaecati,
+                        necessitatibus
+                        totam beatae ullam architecto eum odio deserunt, molestiae doloremque exercitationem.
+                        Architecto,
+                        beatae. Magni totam eum ullam dolorum laudantium consectetur voluptates aperiam. Molestiae
+                        minima
+                        vel, ipsam sunt velit odio, sequi totam, obcaecati earum excepturi possimus perferendis
+                        necessitatibus! Eveniet nam dolorum necessitatibus est quaerat accusamus exercitationem
+                        asperiores
+                        expedita unde veritatis numquam voluptates, soluta, cum inventore maxime voluptatum et ex
+                        impedit
+                        beatae laborum quidem. Qui deleniti vitae, quam labore quod aliquam! Eveniet ea officia,
+                        repellat,
+                        incidunt, quaerat enim cum nesciunt rem sint doloribus velit laudantium magni.</p>
+
+                </section>
+                <section>
+                    <h3 id="contact">Contact</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto iste eveniet dolore ipsum
+                        saepe voluptatum inventore, ab perferendis, doloribus amet hic! Soluta vero veritatis corporis
+                        aliquam reiciendis dignissimos amet aperiam necessitatibus, iure sunt nemo qui adipisci
+                        nesciunt, in
+                        assumenda voluptatum! Eveniet molestiae quisquam ex nihil qui dignissimos exercitationem sunt
+                        cumque, illo dolorum culpa rem quo, laborum sapiente optio minus mollitia? Porro ut fuga dolorum
+                        ipsa, sapiente voluptatem, sit praesentium earum ea temporibus nostrum. Harum nihil nemo
+                        recusandae
+                        consectetur dolorem impedit culpa fuga rem voluptatum modi sit tempora, repellendus est nisi
+                        neque
+                        dolorum repudiandae enim reiciendis nesciunt excepturi vitae doloribus!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni ea at quia adipisci
+                        atque
+                        deleniti quidem, nam nihil architecto numquam laborum, fugiat sed! Ea qui voluptas enim, ad
+                        neque
+                        quod cupiditate officiis asperiores quasi vero eligendi, pariatur omnis cum dolorem dolorum, est
+                        harum sunt velit eius vel voluptate! Architecto qui nulla quisquam aliquam similique nobis
+                        repudiandae! Excepturi unde optio itaque magni consequuntur ad pariatur maiores repudiandae ipsa
+                        reprehenderit quam nihil laboriosam, rerum quisquam culpa at quidem, alias numquam quas placeat
+                        fugit esse tempore. Culpa cum ducimus magnam quo iusto possimus facilis atque aliquid quasi
+                        necessitatibus natus ab officia deleniti vero maxime, dolore quaerat sunt ipsum in corporis!
+                        Atque
+                        accusantium obcaecati harum assumenda placeat, dolorum sint maxime minus unde non vel. Pariatur
+                        hic
+                        reprehenderit impedit. Laudantium provident dolores quaerat fuga impedit doloremque et, nemo
+                        itaque
+                        earum nisi, nesciunt, omnis quas ea culpa nostrum. Temporibus expedita similique veritatis,
+                        ipsum
+                        quidem dolorum.</p>
+                    <p>Iusto consectetur praesentium officiis, quidem hic eos natus nam sit tenetur illo consequuntur
+                        atque
+                        aperiam totam exercitationem est voluptatem sint, iure reiciendis debitis ad deleniti esse eum
+                        nulla. Iure saepe est, ullam minus earum facilis cum omnis nemo ratione autem maiores molestiae
+                        ut
+                        vitae maxime expedita sint iste voluptatem dignissimos asperiores voluptatum fugiat nihil cumque
+                        minima accusantium. Iste, quis. Hic sunt fuga, quasi obcaecati ad quia qui, pariatur nam dolorum
+                        doloribus eveniet quisquam excepturi nemo soluta consequatur, eos eum iste dignissimos
+                        voluptates
+                        accusamus temporibus corporis quam? Atque repellat aperiam neque mollitia fuga nisi, debitis
+                        magnam
+                        veritatis fugit soluta expedita impedit sequi quis quidem magni! Libero perferendis, tempora
+                        mollitia reiciendis vero officia dolore nisi neque rem, voluptatem unde nostrum pariatur dolorem
+                        accusamus maxime aliquid, dolores autem eaque quidem veniam laboriosam. Consectetur tenetur
+                        corrupti
+                        laboriosam aut quos. Necessitatibus ad consequuntur, minus est ab repellendus culpa quidem
+                        veritatis, eum, ullam nisi repellat nemo.</p>
+                    <p>Ratione facilis praesentium, ducimus atque delectus sequi explicabo nihil. Nulla minus dicta rem
+                        blanditiis quae laudantium distinctio cumque? Assumenda accusantium a sequi illum tempore, sit
+                        reiciendis laudantium odit, ab fuga commodi obcaecati! Sunt, perspiciatis soluta id assumenda
+                        aspernatur ipsum atque iste officia architecto quaerat maxime beatae nam illum officiis,
+                        deserunt
+                        temporibus dolores corrupti accusantium veniam necessitatibus rem. Officia non aut a natus
+                        officiis
+                        quam porro atque! Laboriosam, deleniti! Libero illum asperiores unde minus ea. Nam veniam error
+                        saepe facere eum ipsum accusantium aliquid consequatur. Reprehenderit delectus ullam hic velit
+                        tempora quis, eaque quasi vel corrupti ipsam officia totam exercitationem aperiam blanditiis
+                        cupiditate nobis, ipsum minima consequuntur est rem nam illo! Libero nemo voluptatibus
+                        laboriosam
+                        repellat. Ut iusto sunt sequi? Aliquam excepturi ducimus perferendis adipisci necessitatibus
+                        quaerat
+                        quis voluptate, nesciunt cumque veritatis recusandae temporibus assumenda omnis quae commodi
+                        totam
+                        corporis asperiores molestiae iusto odio tenetur sunt labore maiores? Voluptates, labore
+                        doloremque?
+                    </p>
+                </section>
+                <section>
+                    <h3 id="blog">Blog</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto iste eveniet dolore ipsum
+                        saepe voluptatum inventore, ab perferendis, doloribus amet hic! Soluta vero veritatis corporis
+                        aliquam reiciendis dignissimos amet aperiam necessitatibus, iure sunt nemo qui adipisci
+                        nesciunt, in
+                        assumenda voluptatum! Eveniet molestiae quisquam ex nihil qui dignissimos exercitationem sunt
+                        cumque, illo dolorum culpa rem quo, laborum sapiente optio minus mollitia? Porro ut fuga dolorum
+                        ipsa, sapiente voluptatem, sit praesentium earum ea temporibus nostrum. Harum nihil nemo
+                        recusandae
+                        consectetur dolorem impedit culpa fuga rem voluptatum modi sit tempora, repellendus est nisi
+                        neque
+                        dolorum repudiandae enim reiciendis nesciunt excepturi vitae doloribus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam consequuntur sapiente vero
+                        consequatur at ab architecto perspiciatis corporis porro tenetur, eaque necessitatibus saepe
+                        quisquam ex dolor, soluta corrupti error aspernatur minus. Est numquam dolorum distinctio
+                        doloremque
+                        quaerat asperiores eum quo eveniet, reiciendis cumque magni quisquam expedita facere. Ipsam,
+                        earum
+                        corrupti omnis, ea eligendi voluptas similique eaque pariatur voluptates porro culpa, itaque
+                        dignissimos soluta quos commodi iste? Praesentium, repellat! Iste consectetur necessitatibus
+                        iusto!
+                        Esse, voluptate ad! Consequatur fugit laborum repudiandae ullam possimus, dicta, nihil delectus,
+                        aperiam aliquam quae similique. Placeat dolorum consequuntur nesciunt veniam nobis, ex laborum
+                        alias
+                        animi ipsam quod sit atque aut voluptatum repellendus architecto temporibus deleniti non eius!
+                        Consequatur labore doloribus quia quibusdam deserunt fugit nemo rerum, quisquam sed amet esse
+                        molestiae. Minus repellendus consequuntur voluptate dolorem. Ullam possimus amet eveniet
+                        aperiam,
+                        facilis natus fugiat perferendis pariatur earum et iure ab laudantium tenetur esse beatae
+                        voluptatum
+                        adipisci!</p>
+                    <p>Tenetur officia nesciunt enim dolor porro, architecto illo molestiae unde sit asperiores
+                        voluptatibus. Perferendis magnam ullam quod dolorem. Rerum ea eaque dolorem unde beatae
+                        consequatur
+                        nobis dolore, ipsum facere nisi atque eveniet eum accusantium ducimus repellat alias ullam rem
+                        quisquam explicabo, in distinctio iure at. Veniam omnis recusandae laboriosam mollitia
+                        architecto
+                        asperiores nam ducimus, praesentium sit quae dolores minima cum iure id vitae provident nostrum
+                        nesciunt non eos hic totam quaerat deserunt. Cum similique totam quos iusto nam nisi nobis ab
+                        delectus? Dolores, assumenda voluptatum. Voluptate possimus asperiores quidem quam numquam rem
+                        minus? Non, fugit nihil cum ipsum fuga alias recusandae ea. Possimus doloremque nisi libero.
+                        Neque
+                        doloremque eius reiciendis fugiat voluptatum architecto maiores, iste ut ipsam cupiditate
+                        possimus.
+                        Sint odio facere ullam qui! Mollitia, necessitatibus distinctio recusandae in quis incidunt
+                        labore
+                        sequi, eaque a quidem explicabo nesciunt commodi impedit veritatis consequatur magni vitae eos.
+                        Eos
+                        velit vel error architecto?</p>
+                </section>
+
+            </article>
+            <div class="back-to-top"><a href="#top">Back to top</a></div>
         </main>
         <footer class="page-footer">
             <ul role="list">
