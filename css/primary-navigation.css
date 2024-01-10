@@ -68,8 +68,11 @@
         cursor: pointer;
         text-decoration: none;
 
-        &:hover {
-            border-bottom-color: var(--nav-link);
+        /* Excludes mobiles and tablets from trying to :hover */
+        @media (hover: hover) {
+            &:hover {
+                border-bottom-color: var(--nav-link);
+            }
         }
 
         &.active,
