@@ -1,1 +1,0 @@
-A responsive mobile menu with accessibility features designed for both screen reader users and keyboard-based navigation.
