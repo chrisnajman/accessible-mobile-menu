@@ -2,9 +2,13 @@
 
 A responsive mobile menu that prioritizes accessibility features for screen readers and keyboard users.
 
+---
+
 ## Description
 
 The mobile menu is designed to be responsive, and is visible on screens less than 768px wide. It is initially hidden and appears upon clicking the hamburger menu button. Clicking on a menu item will close the menu.
+
+---
 
 ## Accessibility Features
 
@@ -21,6 +25,12 @@ The menu is accessible to screen readers through the use of appropriate ARIA att
 
 The menu ensures accessibility for keyboard users by allowing them to navigate to the hamburger button using the keyboard's tab functionality. Once focused on the button, users can press the 'enter' key to toggle the visibility of the menu. This behavior ensures that keyboard users can interact with the menu effectively, enabling them to open and close it without relying on mouse interactions.
 
+### WAVE Web Accessibility Evaluation Tools Report
+
+- [Automated accessibility analysis results](https://wave.webaim.org/report#/https://chrisnajman.github.io/accessible-mobile-menu/)
+
+---
+
 ## Usage
 
 ### HTML Structure
@@ -35,9 +45,13 @@ The CSS defines the styles for the mobile menu and the hamburger button, includi
 
 The JavaScript function `btnHamburger()` handles the click event on the hamburger button, toggling the visibility of the navigation menu and updating ARIA attributes accordingly.
 
+---
+
 ## Source
 
 - The animation on the button is based on the basic version of [Basic, Intermediate & Pro animated hamburger icons](https://youtu.be/R00QiudbD4Y?si=VDTxfeCotRcLGnGx).
+
+---
 
 ## Testing
 
